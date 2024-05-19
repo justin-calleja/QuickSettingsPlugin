@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ck0f1iheqj085" path="res://addons/quick_settings/checkbox/checkbox.tscn" id="1_qsafq"]
 
-[node name="Dock" type="Control"]
+[node name="QuickSettings" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
