@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://kna221gt5h51"]
+
+[ext_resource type="PackedScene" uid="uid://ck0f1iheqj085" path="res://addons/quick_settings/checkbox/checkbox.tscn" id="1_qsafq"]
+
+[node name="Dock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 42
+
+[node name="EnableExternalEditor" parent="VBoxContainer" instance=ExtResource("1_qsafq")]
+layout_mode = 2
+_linkBtnText = "Enable external editor"
+_setting_path = "text_editor/external/use_external_editor"
+_setting_type = 0
+
+[node name="Allow HiDPI" parent="VBoxContainer" instance=ExtResource("1_qsafq")]
+layout_mode = 2
+_linkBtnText = "Allow HiDPI"
+_setting_path = "display/window/dpi/allow_hidpi"

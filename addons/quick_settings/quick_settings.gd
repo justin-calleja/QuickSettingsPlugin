@@ -6,7 +6,7 @@ var dock
 func _enter_tree():
 	# Initialization of the plugin goes here.
 	# Load the dock scene and instantiate it.
-	dock = preload("toggle_external_editor_dock.tscn").instantiate()
+	dock = preload("dock.tscn").instantiate()
 
 	# Add the loaded scene to the docks.
 	add_control_to_dock(DOCK_SLOT_LEFT_UR, dock)
