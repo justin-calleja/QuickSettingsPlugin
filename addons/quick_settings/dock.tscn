@@ -21,7 +21,7 @@ theme_override_constants/separation = 42
 
 [node name="EnableExternalEditor" parent="VBoxContainer" instance=ExtResource("1_qsafq")]
 layout_mode = 2
-_linkBtnText = "Enable external editor"
+_linkBtnText = "Enable External Editor"
 _setting_path = "text_editor/external/use_external_editor"
 _setting_type = 0
 
