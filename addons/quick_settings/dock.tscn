@@ -35,5 +35,6 @@ _setting_path = "display/window/dpi/allow_hidpi"
 layout_mode = 2
 script = ExtResource("2_yxoej")
 _toggled_dropdown_opt = 0
+_untoggled_dropdown_opt = 1
 _linkBtnText = "[Nearest] Default Texture Filter"
 _setting_path = "rendering/textures/canvas_textures/default_texture_filter"
