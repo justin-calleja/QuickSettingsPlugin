@@ -1,5 +1,6 @@
 @tool
-extends Control
+class_name QSCheckbox
+extends Node
 
 @onready var h_box_container = $HBoxContainer
 @onready var check_box = $HBoxContainer/CheckBox
@@ -23,7 +24,7 @@ func get_setting() -> Variant:
 		return ProjectSettings.get_setting(_setting_path)
 
 
-func set_setting(val: bool):
+func set_setting(val: Variant):
 	if _setting_type == SettingType.EDITOR:
 		editor_settings.set(_setting_path, val)
 	else:

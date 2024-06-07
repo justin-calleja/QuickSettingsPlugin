@@ -14,6 +14,11 @@ config/name="Quick Settings Plugin"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/quick_settings/plugin.cfg")
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=2
 renderer/rendering_method="mobile"

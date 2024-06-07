@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://kna221gt5h51"]
+[gd_scene load_steps=3 format=3 uid="uid://kna221gt5h51"]
 
 [ext_resource type="PackedScene" uid="uid://ck0f1iheqj085" path="res://addons/quick_settings/checkbox/checkbox.tscn" id="1_qsafq"]
+[ext_resource type="Script" path="res://addons/quick_settings/checkbox/set_dropdown_with_checkbox.gd" id="2_yxoej"]
 
 [node name="QuickSettings" type="Control"]
 layout_mode = 3
@@ -29,3 +30,10 @@ _setting_type = 0
 layout_mode = 2
 _linkBtnText = "Allow HiDPI"
 _setting_path = "display/window/dpi/allow_hidpi"
+
+[node name="Nearest Default Texture Filter" parent="VBoxContainer" instance=ExtResource("1_qsafq")]
+layout_mode = 2
+script = ExtResource("2_yxoej")
+_toggled_dropdown_opt = 0
+_linkBtnText = "[Nearest] Default Texture Filter"
+_setting_path = "rendering/textures/canvas_textures/default_texture_filter"
