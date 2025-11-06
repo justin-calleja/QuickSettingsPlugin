@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://kna221gt5h51"]
+[gd_scene load_steps=4 format=3 uid="uid://kna221gt5h51"]
 
 [ext_resource type="PackedScene" uid="uid://ck0f1iheqj085" path="res://addons/quick_settings/checkbox/checkbox.tscn" id="1_qsafq"]
 [ext_resource type="Script" path="res://addons/quick_settings/checkbox/set_dropdown_with_checkbox.gd" id="2_yxoej"]
+[ext_resource type="Script" path="res://addons/quick_settings/optionbtn/viewport_size_option_btn.gd" id="3_uhsr7"]
 
 [node name="QuickSettings" type="Control"]
 layout_mode = 3
@@ -18,11 +19,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 42
+theme_override_constants/separation = 54
 
 [node name="EnableExternalEditor" parent="VBoxContainer" instance=ExtResource("1_qsafq")]
 layout_mode = 2
-_linkBtnText = "Enable External Editor"
+_linkBtnText = "changed Enable External Editor"
 _setting_path = "text_editor/external/use_external_editor"
 _setting_type = 0
 
@@ -38,3 +39,13 @@ _toggled_dropdown_opt = 0
 _untoggled_dropdown_opt = 1
 _linkBtnText = "[Nearest] Default Texture Filter"
 _setting_path = "rendering/textures/canvas_textures/default_texture_filter"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+item_count = 2
+popup/item_0/text = "1024x546"
+popup/item_0/id = 0
+popup/item_1/text = "1280x720"
+popup/item_1/id = 1
+script = ExtResource("3_uhsr7")
